@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { LogonComponent } from './logon.component';
 import { SignupComponent } from './signup/signup.component';
-
-
+import { AngularMaterialModule } from '../../shared/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,8 @@ import { SignupComponent } from './signup/signup.component';
     SignupComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AngularMaterialModule
   ],
   exports: [
     LogonComponent

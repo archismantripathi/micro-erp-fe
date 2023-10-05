@@ -1,1 +1,28 @@
-<p>login works!</p>
+<aside></aside>
+<section class="main">
+  <div>
+    <mat-card class="login-card">
+      <img src="/src/assets/availability-svgrepo-com.svg" alt="" height="100px">
+      <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" class='`[formControl]="email"' required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" class='`[formControl]="email"' required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+      <button mat-raised-button color="accent">Login</button>
+
+      <p>
+        <mat-form-field appearance="outline" class="test">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" class="test">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+    </mat-card>
+  </div>
+</section>
