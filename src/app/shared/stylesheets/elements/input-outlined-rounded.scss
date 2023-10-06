@@ -1,0 +1,56 @@
+@import "../global-variables.scss";
+
+.input-outlined-rounded {
+  position: relative;
+}
+
+.input-outlined-rounded input {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 5rem;
+}
+
+.input-outlined-rounded label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.input-outlined-rounded p {
+  transition: all 0.15s ease-out;
+  color: $grey;
+}
+
+.input-outlined-rounded input:focus {
+  outline: none;
+  border: 2px solid $primary;
+}
+
+.input-outlined-rounded input:focus + label p,
+:not(input[value=""]) + label p {
+  font-size: 12px;
+  transform: translate(0, -150%);
+  background-color: $white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.input-outlined-rounded input:focus + label p {
+  color: $primary;
+}
+
+.input-outlined-rounded :not(input:focus)::placeholder {
+  color: $white;
+}
+
+.input-outlined-rounded :not(:not(input:hover)):not(input:focus){
+  border-color: $black;
+}

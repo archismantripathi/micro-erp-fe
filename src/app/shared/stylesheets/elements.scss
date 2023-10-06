@@ -1,0 +1,13 @@
+@import "global-variables.scss";
+@import "./elements/input-outlined-rounded.scss";
+
+button {
+  background-color: $primary;
+  border: none;
+  padding: 0.8rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  font-size: medium;
+  color: white;
+  border-radius: 2rem;
+}
